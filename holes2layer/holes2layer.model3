@@ -1,0 +1,106 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:deleteholes_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:deleteholes" name="alg_id" type="QString"/>
+      <Option value="Usuń pierścienie wewnętrzne" name="component_description" type="QString"/>
+      <Option value="125" name="component_pos_x" type="double"/>
+      <Option value="160" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:deleteholes_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="wybierzwarstwwektorow" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MIN_AREA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:difference_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:difference" name="alg_id" type="QString"/>
+      <Option value="Różnica" name="component_description" type="QString"/>
+      <Option value="157" name="component_pos_x" type="double"/>
+      <Option value="310" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:difference_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Holes" type="Map">
+          <Option value="native:difference_1" name="child_id" type="QString"/>
+          <Option value="Holes" name="component_description" type="QString"/>
+          <Option value="357" name="component_pos_x" type="double"/>
+          <Option value="355" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="Holes" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:deleteholes_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAY" type="List">
+          <Option type="Map">
+            <Option value="wybierzwarstwwektorow" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="Kartownik" name="model_group" type="QString"/>
+  <Option value="Holes2Layer" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="native:difference_1:Holes" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Holes" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="native:difference_1:Holes" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+    <Option name="wybierzwarstwwektorow" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option value="Wybierz warstwę wektorową" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="wybierzwarstwwektorow" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="wybierzwarstwwektorow" type="Map">
+      <Option value="wybierzwarstwwektorow" name="component_description" type="QString"/>
+      <Option value="120" name="component_pos_x" type="double"/>
+      <Option value="60" name="component_pos_y" type="double"/>
+      <Option value="wybierzwarstwwektorow" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>
